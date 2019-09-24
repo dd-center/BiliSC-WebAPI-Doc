@@ -2,7 +2,9 @@
 
 是醒目留言的接口文档！
 
-Prefix: `https://api.live.bilibili.com/`
+Prefix: `https://api.live.bilibili.com`
+
+全部的`读取`接口使用 GET，`操作`接口使用 POST
 
 ## [/av/v1/SuperChat/getMessageList](https://api.live.bilibili.com/av/v1/SuperChat/getMessageList?room_id=14917277)
 
@@ -126,13 +128,13 @@ Prefix: `https://api.live.bilibili.com/`
 { "code": 404, "msg": "消息不存在", "message": "消息不存在", "data": [] }
 ```
 
-## [/av/v1/SuperChat/messageInfo](https://api.live.bilibili.com/av/v1/SuperChat/messageInfo?id=1)
+## [/av/v1/SuperChat/messageInfo](https://api.live.bilibili.com/av/v1/SuperChat/messageInfo?id=16)
 
 ### Query
 
 ```json
 {
-  "id": "1"
+  "id": "16"
 }
 ```
 
@@ -144,8 +146,8 @@ Prefix: `https://api.live.bilibili.com/`
   "msg": "",
   "message": "",
   "data": {
-    "id": "1",
-    "uid": "28438460",
+    "id": "16",
+    "uid": "29608",
     "background_image": "https://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
     "background_color": "#EDF5FF",
     "background_icon": "",
@@ -154,30 +156,30 @@ Prefix: `https://api.live.bilibili.com/`
     "font_color": "",
     "price": 30,
     "rate": 1000,
-    "time": -1140656,
-    "start_time": 1568107860,
-    "end_time": 1568107920,
-    "message": "测试",
-    "message_jpn": "",
-    "ts": 1569248576,
-    "token": "7EF24033",
+    "time": -50531,
+    "start_time": 1569234681,
+    "end_time": 1569234741,
+    "message": "熊猫能吃辣吗？",
+    "message_jpn": "パンダは辛いものが食べられますか？",
+    "ts": 1569285272,
+    "token": "73AFB519",
     "user_info": {
-      "uname": "傲娇的小六日其三",
-      "face": "https://i0.hdslb.com/bfs/face/ec20b4bf6d00be899babacc519cb9742b5210606.jpg",
-      "face_frame": "https://i0.hdslb.com/bfs/live/78e8a800e97403f1137c0c1b5029648c390be390.png",
-      "guard_level": 3,
-      "user_level": 38,
-      "level_color": "#a068f1",
+      "uname": "噶呜",
+      "face": "https://i0.hdslb.com/bfs/face/4a3b67227dd1da6b8a0d7ba7c84d434c27067e69.jpg",
+      "face_frame": "",
+      "guard_level": 0,
+      "user_level": 29,
+      "level_color": "#5896de",
       "is_vip": 1,
       "is_svip": 1,
-      "is_main_vip": 0,
-      "title": "0",
+      "is_main_vip": 1,
+      "title": "title-225-1",
       "manager": 0
     },
     "medal_info": {
-      "target_id": 28008980,
-      "medal_level": 14,
-      "medal_name": "ddd123",
+      "target_id": 332704117,
+      "medal_level": 15,
+      "medal_name": "喵喵狐",
       "medal_color": "#ff86b2"
     }
   }
@@ -280,4 +282,12 @@ Prefix: `https://api.live.bilibili.com/`
 
 ```json
 { "code": 0, "msg": "success", "message": "success", "data": { "list": [] } }
+```
+
+## [/userext/v1/Conf/getExchangeRate](https://api.live.bilibili.com/userext/v1/Conf/getExchangeRate)
+
+### Payload
+
+```json
+{ "code": 0, "msg": "", "message": "", "data": { "exchange_rate": 14.7 } }
 ```
