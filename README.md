@@ -225,48 +225,119 @@ Prefix: `https://api.live.bilibili.com`
 
 ```json
 {
-  "code": 0,
-  "msg": "OK",
-  "message": "OK",
-  "data": {
-    "user_info": {
-      "uname": "RootChannel",
-      "face": "https://i1.hdslb.com/bfs/face/876cbc9147b1c2c1e44679713f45453546db2b24.jpg",
-      "face_frame": "https://i0.hdslb.com/bfs/face/08eea2668636a14ad4b3d64a1d2dc8d046a7a8e7.png",
-      "is_vip": 1,
-      "is_svip": 1,
-      "is_main_vip": 1
-    },
-    "medal_info": {},
-    "price_configs": [
-      {
-        "id": 1,
-        "level": 1,
-        "price": 30,
-        "second": 10,
-        "limit": 200,
-        "background_image": "https://i1.hdslb.com/bfs/face/876cbc9147b1c2c1e44679713f45453546db2b24.jpg",
-
-        "background_color": "red",
-        "background_bottom_color": "red",
-        "background_icon": "https://i1.hdslb.com/bfs/face/876cbc9147b1c2c1e44679713f45453546db2b24.jpg"
-      },
-      {
-        "id": 2,
-        "level": 2,
-        "price": 60,
-        "second": 60,
-        "limit": 300,
-        "background_image": "https://i1.hdslb.com/bfs/face/876cbc9147b1c2c1e44679713f45453546db2b24.jpg",
-        "background_color": "blue",
-        "background_bottom_color": "blue",
-        "background_icon": "https://i1.hdslb.com/bfs/face/876cbc9147b1c2c1e44679713f45453546db2b24.jpg"
-      }
-    ],
-    "placeholder": "",
-    "button_text": "发送",
-    "title": "发送醒目留言"
-  }
+    "code": 0,
+    "msg": "success",
+    "message": "success",
+    "data": {
+        "title": "发送醒目留言",
+        "rate": 1000,
+        "placeholder": "通过醒目留言传递自己的心意吧！",
+        "introduce_url": "",
+        "button_text": "购买并发送",
+        "trans_status": 1,
+        "ranked_mark": 0,
+        "rank_version_sign": "",
+        "gift_id": 12000,
+        "gift_name": "醒目留言",
+        "user_info": {
+            "uname": "RootChannel",
+            "face": "http://i2.hdslb.com/bfs/face/c14360f12cf183287d8c0562ced414dddec39b87.png",
+            "face_frame": "",
+            "guard_level": 0,
+            "user_level": 30,
+            "is_vip": 0,
+            "is_svip": 0,
+            "is_main_vip": 1,
+            "title": "title-221-1",
+            "manager": 0
+        },
+        "medal_info": {
+            "target_id": 32890488,
+            "medal_level": 10,
+            "medal_name": "白帽子",
+            "medal_color": "#a068f1"
+        },
+        "price_configs": [
+            {
+                "id": 8,
+                "level": 1,
+                "price": 30,
+                "second": "60",
+                "limit": 40,
+                "background_image": "http://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
+                "background_color": "#EDF5FF",
+                "background_icon": "",
+                "background_bottom_color": "#2A60B2",
+                "background_price_color": "#7497CD",
+                "font_color": ""
+            },
+            {
+                "id": 2,
+                "level": 2,
+                "price": 50,
+                "second": 120,
+                "limit": 50,
+                "background_image": "https://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
+                "background_color": "#DBFFFD",
+                "background_icon": "",
+                "background_bottom_color": "#427D9E",
+                "background_price_color": "#7DA4BD",
+                "font_color": ""
+            },
+            {
+                "id": 3,
+                "level": 3,
+                "price": 100,
+                "second": 300,
+                "limit": 60,
+                "background_image": "https://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
+                "background_color": "#FFF1C5",
+                "background_icon": "",
+                "background_bottom_color": "#E2B52B",
+                "background_price_color": "#ECCF75",
+                "font_color": ""
+            },
+            {
+                "id": 4,
+                "level": 4,
+                "price": 500,
+                "second": 1800,
+                "limit": 80,
+                "background_image": "https://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
+                "background_color": "#FFEAD2",
+                "background_icon": "https://i0.hdslb.com/bfs/live/e12e931ed8d9e5189ab6d1a3a1da35af4f8a55af.png",
+                "background_bottom_color": "#E09443",
+                "background_price_color": "#E8AF79",
+                "font_color": ""
+            },
+            {
+                "id": 5,
+                "level": 5,
+                "price": 1000,
+                "second": 3600,
+                "limit": 90,
+                "background_image": "https://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
+                "background_color": "#FFE7E4",
+                "background_icon": "https://i0.hdslb.com/bfs/live/0cf7b5fdc7084c9ae05f7a371ea2438118529d66.png",
+                "background_bottom_color": "#E54D4D",
+                "background_price_color": "#EE8B8B",
+                "font_color": ""
+            },
+            {
+                "id": 6,
+                "level": 6,
+                "price": 2000,
+                "second": 7200,
+                "limit": 100,
+                "background_image": "https://i0.hdslb.com/bfs/live/1aee2d5e9e8f03eed462a7b4bbfd0a7128bbc8b1.png",
+                "background_color": "#FFD8D8",
+                "background_icon": "https://i0.hdslb.com/bfs/live/0d9cbbdbad7d3371266cd5b568065415415316ae.png",
+                "background_bottom_color": "#AB1A32",
+                "background_price_color": "#C86A7A",
+                "font_color": ""
+            }
+        ]
+    }
 }
 ```
 
